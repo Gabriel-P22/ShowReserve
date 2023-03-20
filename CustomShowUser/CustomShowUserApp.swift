@@ -11,7 +11,12 @@ import SwiftUI
 struct CustomShowUserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Color.black
+                ContentView()
+                    .padding(.horizontal, 16)
+            }
+                
         }
     }
 }
